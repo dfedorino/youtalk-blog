@@ -137,7 +137,7 @@ label, ol, ul {
     color: rgba(51, 51, 51, 0.7);
 }
 
-/* Materials */
+/* Materials Tags*/
 
 .materials__title {
     font-family: var(--font-family);
@@ -191,4 +191,111 @@ label, ol, ul {
 .materials__checkbox:checked + .materials__label {
     border: 2px solid;
     border-color: var(--light-green-color);
+}
+
+/* Materials Article Cards */
+
+.materials__article-cards {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 24px;
+    margin-bottom: 56px;
+}
+
+.materials__article-card:nth-child(1),
+.materials__article-card:nth-child(2) {
+    grid-column: span 3;
+    height: 499px;
+}
+
+.materials__article-card:nth-child(n + 3) {
+    grid-column: span 2;
+    height: 475px;
+}
+
+.materials__article-card {
+    display: grid;
+    grid-template-rows: 260px 1fr;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    border: 1px solid rgb(222, 222, 222);
+    border-radius: 16px;
+}
+
+.materials__article-card-tag-list {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    align-items: flex-start;
+}
+
+.materials__article-card-tag-item {
+    border: 1px solid #c1c5cd;
+    border-radius: 24px;
+    padding: 6px 8px;
+    background: rgba(255, 255, 255, 0.7);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 143%;
+}
+
+.materials__article-card-tag {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--text-color);
+}
+
+.materials__article-card-content {
+    display: flex;
+    flex-direction: column;
+
+    padding: 16px;
+    color: var(--text-color);
+}
+
+.materials__article-card-title {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 144%;
+}
+
+.materials__article-card-author {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #494949;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.materials__article-card-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.materials__article-card-date {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #868686;
+    margin: 0;
+    margin-top: auto;
 }
