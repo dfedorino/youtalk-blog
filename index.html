@@ -8,7 +8,52 @@
     <link rel="icon" href="https://youtalk.ru/favicon-32x32.png?v=0e996bcaaea76d15b8c853ca0e115fd6" type="image/png">
     <!-- Favicon address: https://youtalk.ru/favicon-32x32.png?v=0e996bcaaea76d15b8c853ca0e115fd6 -->
 </head>
-<body>
+<body style="overflow: unset;">
+    <header class="header">
+        <div class="header__container container">
+            <nav class="header__menu menu">
+                <a href="/" class="menu__logo">
+                    <img src="images/logo.svg" alt="YouTalk" height="36" width="51">
+                </a>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">О нас</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Тарифы</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Для бизнеса</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Психологам</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Сертификат</a>
+                    </li>
+                    <li class="menu__item menu__item--has-dropdown">
+                        <a href="#" class="menu__link">
+                            Материалы
+                            <span class="menu__icon">
+                                <img src="images/arrow.svg" width="14" height="14" alt="">
+                                <!-- mb replace with CSS: 
+                                 .menu__item--has-dropdown .menu__link::after {
+                                    content: "";
+                                    width: 14px;
+                                    height: 14px;
+                                    background: url("images/arrow.svg") no-repeat center;
+                                } -->
+                            </span>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">FAQ</a>
+                    </li>
+                </ul>
+                <a href="#" class="menu__btn btn">Подобрать психолога</a>
+            </nav>
+        </div>
+    </header>
     
 </body>
 </html>
