@@ -1,0 +1,36 @@
+:root {
+    --header-btn-green-color: #03B2A5;
+    --header-btn-light-green-color: #E3F5F5;
+    --light-green-color: #16C8BB;
+    --more-btn-green-color: #35B3A9;
+    --blue-color: #2963A3;
+    --font-family: "Montserrat", sans-serif;
+    --second-family: "Open Sans", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu__btn {
+    border-radius: 4px;
+    padding: 14px 20px;
+    background-color: var(--header-btn-light-green-color);
+    color: var(--header-btn-green-color);
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+}
