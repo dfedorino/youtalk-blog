@@ -61,6 +61,14 @@ label, ol, ul {
     justify-content: center;
 }
 
+.header__burger {
+    display: none;
+    border: 0;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
 .header__menu-list {
     display: flex;
     align-items: center;
@@ -97,6 +105,41 @@ label, ol, ul {
     font-size: 16px;
     text-decoration: none;
     margin-left: auto;
+}
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .header__menu {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__menu-list {
+        display: none;
+    }
+
+    .header__menu-btn {
+        display: none;
+    }
+
+    .header__burger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4px;
+
+        width: 40px;
+        height: 40px;
+
+        padding: 0;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
 }
 
 /* Breadcrumbs */
@@ -340,6 +383,7 @@ label, ol, ul {
     justify-content: space-between;
     align-items: start;
     display: flex;
+    padding-bottom: 24px;
 }
 
 .footer__nav-links-flex {
@@ -387,7 +431,7 @@ label, ol, ul {
     height: 100%;
 
     padding: 0 56px 0 12px;
-    
+
     border: 1px solid #c1c5cd;
     border-radius: 4px;
 
@@ -481,6 +525,50 @@ label, ol, ul {
     align-items: center;
     gap: 48px;
     margin-top: 16px;
+}
+
+/* Responsive Footer Layout */
+
+@media (max-width: 768px) {
+    .footer__grid {
+        display: grid;
+
+        grid-template-columns: 247px 1fr;
+        grid-template-areas:
+            "nav subscribe"
+            "social .";
+
+        column-gap: 31px;
+        row-gap: 26px;
+
+        align-items: start;
+        padding-bottom: 27px;
+    }
+
+    .footer__nav-links-flex {
+        grid-area: nav;
+        width: 247px;
+        gap: 30px;
+    }
+
+    .footer__subscribe-form {
+        grid-area: subscribe;
+        min-width: 0; /* prevents overflow */
+    }
+
+    .footer__socials {
+        grid-area: social;
+        width: 221px;
+    }
+
+    .footer__subscribe-description {
+        width: auto;
+    }
+
+    .footer__subscribe-field {
+        width: 100%;
+        max-width: 384px; /* keep if Figma specifies it */
+    }
 }
 
 .footer__underline span {
