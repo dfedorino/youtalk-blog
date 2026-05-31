@@ -919,17 +919,20 @@ button {
     align-items: flex-end;
 }
 
-.page__appointment {
+.card {
     border-radius: 16px;
-    overflow: hidden;
     width: 282px;
-    background: #e6f0fd;
     padding: 24px;
-    text-align: center;
     display: flex;
     flex-direction: column;
+}
+
+.page__appointment {
+    overflow: hidden;
+    background: #e6f0fd;
+    text-align: center;
     gap: 12px;
-    
+    margin-bottom: 24px;
 }
 
 .page__appointment-description {
@@ -955,7 +958,7 @@ button {
     display: block;
 }
 
-.page__appointment-btn {
+.btn {
     border-radius: 4px;
     padding: 12px 16px;
     background: #35b3a9;
@@ -963,6 +966,50 @@ button {
     font-size: 16px;
     line-height: 150%;
     color: #fff;
+}
+
+.page__gift {
+    margin-bottom: 42px;
+}
+
+.page__offer {
+    border: 1px solid #DEDEDE;
+    gap: 16px;
+}
+
+.page__offer-heading {
+    color: #2963a3;
+}
+
+.page__offer-digit {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133%;
+}
+
+.page__offer-sessions {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 144%;
+}
+
+.page__offer-promo {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    color: #011632;
+}
+
+.page__offer-price {
+    margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133%;
+    color: var(--text-color);
+}
+
+.page__offer-btn {
+    width: 108px;
 }
 
 /* Page Bottom */
