@@ -965,4 +965,58 @@ button {
     color: #fff;
 }
 
+/* Page Bottom */
+
+.page__divider {
+    margin-top: 32px;
+    stroke-width: 1px;
+    stroke: #dedede;
+    margin-bottom: 72px;
+}
+
+.page__find-help {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.page__find-help-content > h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 117%;
+    color: var(--text-color);
+}
+
+.page__find-help-content > p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 144%;
+    color: var(--text-color);
+}
+
+.page__find-help-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    width: 349px;
+}
+
+.page__find-help-btn {
+    border-radius: 4px;
+    padding: 20px 24px;
+    background: #16c8bb;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fff;
+    cursor: pointer;
+}
+
+.page__find-help-image {
+    margin-right: calc(-1 * ((100vw - 1200px) / 2));
+}
+
 
